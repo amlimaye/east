@@ -9,17 +9,17 @@ INCLUDES=$(shell python -m pybind11 --includes)
 
 py:
 	g++ ${CXXFLAGS} ${CXXWFLAGS} ${CXXSOFLAGS} ${INCLUDES} \
-		${SRC_DIR}/binding.cpp -o ${BUILD_DIR}/east.so
+		${SRC_DIR}/binding.cxx -o ${BUILD_DIR}/east.so
 
 pydebug:
 	g++ ${CXXDEBUGFLAGS} ${CXXWFLAGS} ${CXXSOFLAGS} ${INCLUDES} \
-		${SRC_DIR}/binding.cpp -o ${BUILD_DIR}/east.so
+		${SRC_DIR}/binding.cxx -o ${BUILD_DIR}/east.so
 
 bin:
-	g++ ${CXXFLAGS} ${CXXWFLAGS} ${SRC_DIR}/main.cpp -o ${BUILD_DIR}/main
+	g++ ${CXXFLAGS} ${CXXWFLAGS} ${SRC_DIR}/main.cxx -o ${BUILD_DIR}/main
 
 bindebug:
-	g++ ${CXXDEBUGFLAGS} ${CXXWFLAGS} ${SRC_DIR}/main.cpp -o ${BUILD_DIR}/main
+	g++ ${CXXDEBUGFLAGS} ${CXXWFLAGS} ${SRC_DIR}/main.cxx -o ${BUILD_DIR}/main
 
 clean:
 	rm -f main

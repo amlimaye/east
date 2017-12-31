@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include "trajectory.hpp"
+#include "trajectory.hxx"
 
 int main() {
     constexpr int T = 5;

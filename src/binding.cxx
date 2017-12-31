@@ -1,7 +1,7 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
 #include <sstream>
-#include "trajectory.hpp"
+#include "trajectory.hxx"
 
 namespace py = pybind11;
 

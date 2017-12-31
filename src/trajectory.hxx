@@ -69,4 +69,4 @@ public:
                                        const int spatial_extent);
 };
 
-#include "trajectory.tpp"
+#include "trajectory.txx"
