@@ -1,6 +1,4 @@
 *.swp
-*.png
 plotting/*
-saved/*
 *.so
 main
