@@ -6,7 +6,7 @@
 namespace py = pybind11;
 
 constexpr int N = 20;
-constexpr int T = 20;
+constexpr int T = 40;
 
 PYBIND11_MODULE(east, m) {
     py::class_<Trajectory<N, T>>(m, "Trajectory")
