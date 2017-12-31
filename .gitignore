@@ -1,0 +1,5 @@
+*.swp
+*.png
+plotting/*
+saved/*
+*.so
